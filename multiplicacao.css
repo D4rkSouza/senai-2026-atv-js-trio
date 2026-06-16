@@ -11,10 +11,29 @@
 
 .multiplicacao_body h1 {
     color: bisque;
-    
 }
 
 .multiplicacao_body ::placeholder {
     color: rgb(151, 131, 107);
     opacity: 0.4;
+}
+
+.multiplicacao_body button {
+    color: rgb(151, 131, 107);
+    box-shadow: inset;
+    text-shadow: rgb(173, 137, 92);
+}
+
+.menu_navegacao {
+    color: rgb(151, 131, 107);
+    display: block;
+}
+
+
+.sub_nav, .soma_nav {
+    color: rgb(151, 131, 107);
+}
+
+.inicio_nav, .div_nav {
+    color: rgb(151, 131, 107);
 }

@@ -6,22 +6,22 @@
     <title>Tabuada de Soma</title>
     <link rel="stylesheet" href="soma.css">
 </head>
-<body>
+<body class="body_soma">
+    <nav class="menu_navegacao">
+        <a href="index.html">Inicio</a>
+        <a href="divisao.html">Divisão</a>
+        <a href="multiplicacao.html">Multiplicação</a>
+        <a href="subtracao.html">Subtracao</a>
+    </nav>
 
-    <div class="calculadora">
+        <h1>Gerador de Tabuada</h1>
 
-        <h1>Tabuada de Soma</h1>
+        <label for="numeroINPUT">Digite um Numero: </label>
+        <input type="number" id="numeroInput" placeholder="Ex.:7">
+        <button id="btnGerar">Gerar Tabuada</button>
 
-        <input
-        type="number"
-        id="numero"
-        placeholder="Digite um número">
+    <div id="resultadoTabuada"></div>
 
-        <button onclick="gerarTabuada()">
-            Gerar Tabuada
-        </button>
-
-        <div id="resultado"></div>
 
     </div>
 
