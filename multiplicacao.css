@@ -18,3 +18,9 @@
     color: rgb(151, 131, 107);
     opacity: 0.4;
 }
+
+.multiplicacao_body button {
+    color: rgb(151, 131, 107);
+    box-shadow: inset;
+    text-shadow: rgb(173, 137, 92);
+}
