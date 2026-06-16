@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+.multiplicacao_body {
+    color: bisque;
+    background-color: rgb(175, 157, 135);
+}
+
+.multiplicacao_body h1 {
+    color: bisque;
+    
+}
+
+.multiplicacao_body ::placeholder {
+    color: rgb(151, 131, 107);
+    opacity: 0.4;
+}

@@ -17,10 +17,10 @@ function gerarTabuada() {
     // Laço de repetição para gerar tabuada de 1 até 10
     for (let i = 1; i <= 10; i++) {
         let resultado = numero * i
-        resultadoDiv.innerHTML += `<p>${numero} * ${i} = ${resultado}</p>`
+        resultadoDiv.innerHTML += `<p>${numero} x ${i} = ${resultado}</p>`
     }
 }
 
-// Faz a função gerarTabuada() ser executada uando clica no botão
+// Faz a função gerarTabuada() ser executada usando clicar no botão
 const btnGerar = document.getElementById('btnGerar')
 btnGerar.addEventListener('click', gerarTabuada)
