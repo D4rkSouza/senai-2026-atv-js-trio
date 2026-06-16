@@ -1,24 +1,26 @@
-function gerarTabuada(){
-    //PEGA O vALOR DO INPUT DO html
+// Função que irá executar quando clicar no botão btnGerar
+
+function gerarTabuada() {
+    // Pega o valor do campo input HTML
     const numeroInput = document.getElementById('numeroInput')
     let numero = parseInt(numeroInput.value)
 
-    //Pega o Elemento onde a Tabuada será Exibida
-    const resultadoDiv = document.getElementById('resultado Tabuada')
-    
-    //Limpa o Conteúdo Anterior
+    // Pega o elemento onde a tabuada será exibida
+    const resultadoDiv = document.getElementById('resultadoTabuada')
+
+    // Limpa o conteudo anterior
     resultadoDiv.innerHTML = ''
 
-    //Adiciona Título para a Tabuada
-    resultadoDiv.innerHTML += `<h2>Tabuada do Número ${numero}: <h2>`
+    // Adiciona um titulo para a tabuada
+    resultadoDiv.innerHTML += `<h2>Tabuada do número ${numero}: </h2>`
 
-    //Laço de Repetição para Gerar Tabuada de 1 a 10
-    for (let i = 1; i <= 10; i++){
-        let resultado= numero * i
-        resultadoDiv.innerHTML += `<p>${numero} x ${i} = ${resultado}</p>`
+    // Laço de repetição para gerar tabuada de 1 até 10
+    for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i
+        resultadoDiv.innerHTML += `<p>${numero} * ${i} = ${resultado}</p>`
     }
 }
 
-//Faz a Função gerarTabuada() ser executada quando clicar no botão
+// Faz a função gerarTabuada() ser executada uando clica no botão
 const btnGerar = document.getElementById('btnGerar')
 btnGerar.addEventListener('click', gerarTabuada)
