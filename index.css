@@ -1,60 +1,157 @@
+/* ===== RESET ===== */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(assets/background_calc.jpg);
+
+/* ===== BODY ===== */
+
+body.Incio{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+
+    color: white;
 }
+
+/* ===== TITULO ===== */
 
 h1{
-    text-align: center;
-    color: coral;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    font-size: 45px;
+
+    background: #111;
+    padding: 20px 50px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.4),
+    0 0 50px rgba(0,255,255,0.2);
+
+    letter-spacing: 2px;
 }
+
+/* ===== MENU ===== */
+
 .menu_navegacao{
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.menu_paginas{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    display: grid;
 
-    background: rgba(0,0,0,0.85);
+    grid-template-columns: repeat(2,200px);
 
-    padding: 15px;
-    border-bottom: 3px solid #000000;
+    gap: 20px;
 
-    position: sticky;
-    top: 0;
-
-    z-index: 100;
+    margin-bottom: 40px;
 }
 
 .menu_navegacao a{
+
     text-decoration: none;
-    color: rgb(0, 0, 0);
 
-    padding: 10px 18px;
+    color: white;
 
-    border: 2px solid #000000;
-    border-radius: 8px;
+    background: #2d3436;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    font-size: 22px;
 
     font-weight: bold;
 
-    transition: .3s;
-    display: block;
-    position: relative;
-}
-body p{
-    text-align: center;
-    margin: 10px;
-    font-family: verdana;
+    box-shadow:
+    inset -5px -5px 10px rgba(255,255,255,0.05),
+    inset 5px 5px 10px rgba(0,0,0,0.4),
+    0 8px 20px rgba(0,0,0,0.4);
 
+    transition: 0.3s;
+}
+
+/* Cores diferentes para cada botão */
+
+.menu_navegacao a:nth-child(1){
+    background: #e74c3c;
+}
+
+.menu_navegacao a:nth-child(2){
+    background: #f39c12;
+}
+
+.menu_navegacao a:nth-child(3){
+    background: #27ae60;
+}
+
+.menu_navegacao a:nth-child(4){
+    background: #3498db;
+}
+
+.menu_navegacao a:hover{
+
+    transform: translateY(-5px) scale(1.05);
+
+    filter: brightness(1.15);
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.3);
+}
+
+/* ===== CARTÃO ===== */
+
+.paragrafos{
+
+    width: 500px;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(15px);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+/* ===== TEXTOS ===== */
+
+.paragrafos p{
+
+    font-size: 22px;
+
+    margin: 20px 0;
+
+    background: rgba(255,255,255,0.08);
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.paragrafos p:hover{
+
+    transform: scale(1.03);
+
+    background: rgba(255,255,255,0.18);
 }

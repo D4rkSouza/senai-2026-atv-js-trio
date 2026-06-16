@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabuada de Soma</title>
     <link rel="stylesheet" href="soma.css">
 </head>
 <body>
-    
+
+    <div class="calculadora">
+
+        <h1>Tabuada de Soma</h1>
+
+        <input
+        type="number"
+        id="numero"
+        placeholder="Digite um número">
+
+        <button onclick="gerarTabuada()">
+            Gerar Tabuada
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="soma.js"></script>
+
 </body>
 </html>
